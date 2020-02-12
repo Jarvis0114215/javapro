@@ -1,9 +1,12 @@
 package com.Neuedu.HomeWork;
 
+import java.io.Serializable;
+
 /**
  * Create by Jia on 2020/2/10/010 14:55
  */
-public class MyBook {
+public class MyBook implements Serializable {
+    private static final long serialVersionUID = -1529975472479161951L;
     private String name;
     private Double price;
     private String press;   //出版社
