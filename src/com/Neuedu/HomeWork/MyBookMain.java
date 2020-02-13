@@ -144,6 +144,7 @@ public class MyBookMain {
             MyBook myBook = books.get(i);
             if(myBook.getName().equals(name)){
                 books.remove(i);
+                save();
                 System.out.println("此书删除成功。");
                 menu();
                 return;
