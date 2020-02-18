@@ -1,4 +1,4 @@
-package com.Neuedu.HomeWork;
+package com.Neuedu.pr;
 
 import com.Neuedu.MyTest.MyArray;
 
