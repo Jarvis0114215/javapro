@@ -1,32 +1,16 @@
-package com.Neuedu.pr;
+package com.Neuedu.MyTest;
 
 /**
- * Create by Jia on 2020/2/5/005 9:35
+ * Create by Jia on 2020/2/20/020 19:21
  */
 public class MyTest3 {
     public static void main(String[] args) {
-        /*冒泡排序*/
-        /*int[] array = {1,3,2,7,4,8,5,9,0};
-        bbsout(array);*/
+        /*冒泡排序选择排序*/
+        int[] array = {100,4,24,35,2,69,45,44,78,1};
+        //bbsout(array);
+        XuanZeSort(array);
 
-        /*选择排序*/
-        /*int[] array = {100,4,24,35,2,69,45,44,78,1};
-        for(int i=0;i<array.length-1;i++){
-            int min = i;
-            for(int j = i+1; j <array.length ;j++){
-                if(array[j]<array[min]){
-                    min = j;
-                }
-            }
-            if(min!=i){
-                int temp = array[i];
-                array[i] = array[min];
-                array[min] = temp;
-            }
-        }
-        for(int a : array){
-            System.out.println(a);
-        }*/
+
         /*二分搜索*/
         /*int a = 100000;
         int[] array = new int[100000];
@@ -59,6 +43,24 @@ public class MyTest3 {
         }
         return 0;
     }
+    public static void XuanZeSort(int[] array){
+        for(int i=0;i<array.length-1;i++){
+            int min = i;
+            for(int j = i+1; j <array.length ;j++){
+                if(array[j]<array[min]){
+                    min = j;
+                }
+            }
+            if(min!=i){
+                int temp = array[i];
+                array[i] = array[min];
+                array[min] = temp;
+            }
+        }
+        for(int a : array){
+            System.out.println(a);
+        }
+    }
 
     /*二分搜索查询*/
     public static int search(int[] array, int value){
@@ -80,5 +82,4 @@ public class MyTest3 {
         }
         return -1;
     }
-
 }

@@ -90,11 +90,11 @@ public class JdbcUtil {
             e.printStackTrace();
         } catch (InstantiationException e) {
             e.printStackTrace();
+        }finally {
+            close(con,pstmt,rs);
         }
         return list;
     }
-
-
 
     //封装关闭方法
     static void close(Connection con,PreparedStatement pstmt){

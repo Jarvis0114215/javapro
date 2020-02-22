@@ -5,6 +5,7 @@ import com.Neuedu.pojo.Student;
 import com.Neuedu.util.JdbcUtil;
 import com.Neuedu.web.StudentWeb;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -12,15 +13,17 @@ import java.util.List;
  */
 public class MyTest2 {
     public static void main(String[] args) {
-        StudentWeb studentWeb = new StudentWeb();
+        /*StudentWeb studentWeb = new StudentWeb();
         studentWeb.showmain();
-        studentWeb.input();
+        studentWeb.input();*/
        /* Class clz = Dept.class;
         List<Dept> list = JdbcUtil.executeQuery("select deptno,dname,loc from dept",Dept.class);*/
 
         /*Class clz = Student.class;
         List<Student> list = JdbcUtil.executeQuery("select id,name,age,gender from student",Student.class);
         System.out.println(list);*/
+
+
 
     }
 }
