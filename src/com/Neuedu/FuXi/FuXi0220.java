@@ -1,5 +1,8 @@
 package com.Neuedu.FuXi;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Create by Jia on 2020/2/20/020 19:35
  */
@@ -52,11 +55,11 @@ public class FuXi0220 {
          *      jdk1.8之前接口中只能有抽象方法  1.8之后也可有非抽象方法(通过default关键字)
          *
          */
-
-        /**
-         * hashcode
-         */
-
+        Map m = new HashMap();
+        m.put("001","张三");
+        m.put("002","李四");
+        m.put("002","王五");
+        System.out.println(m.get("002"));
 
 
 
